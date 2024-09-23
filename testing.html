@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form</title>
+    
+  <style>
+    /* Style for the container box */
+    .container {
+      max-width: 400px; /* Set maximum width of the box */
+      margin: 0 auto; /* Center the box horizontally */
+      padding: 20px; /* Add padding inside the box */
+      border: 1px solid #ccc; /* Add a border */
+      border-radius: 8px; /* Add border radius for rounded corners */
+      background-color: #c71111a2; /* Background color */
+      background-image: url('images/solver.png'); /* Add background image URL */
+      background-size: cover; /* Cover the entire container */
+      background-position: cover; /* Center the background image */
+      box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Add a subtle shadow */
+    }
+
+    /* Additional style for form elements */
+    label {
+      display: block; /* Make labels block-level for better spacing */
+      margin-bottom: 8px; /* Add margin below labels */
+    }
+
+    input[type="text"], input[type="password"], input[type="email"], input[type="reset"], input[type="submit"] {
+      width: 100%; /* Make inputs fill the width of the container */
+      padding: 8px; /* Add padding inside inputs */
+      margin-bottom: 12px; /* Add margin below inputs */
+      border: 1px solid #ccc; /* Add border */
+      border-radius: 4px; /* Add border radius */
+    }
+
+    input[type="reset"], input[type="submit"] {
+      background-color: #007bff; /* Blue background color for reset and submit buttons */
+      color: #fff; /* White text color */
+      border: none; /* Remove border */
+      cursor: pointer; /* Change cursor to pointer */
+      border-radius: 32px;
+    }
+
+    input[type="reset"]:hover, input[type="submit"]:hover {
+      background-color: #0056b3; /* Darker blue color on hover */
+    }
+  </style>
+</head>
+<body>
+  <div class="container"> <!-- Start of container div -->
+    <form>
+      <div>
+        <label for="fname">Username:</label>
+        <input type="text" id="fname" name="fname" placeholder="Username">
+      </div>
+      <br>
+      <div>
+        <label for="pass">Password:</label>
+        <input type="password" id="pass" name="pass" maxlength="12" placeholder="Password">
+      </div>
+      <br>
+      <div>
+        <label for="gmail">Enter email:</label>
+        <input type="email" id="gmail" name="gmail" placeholder="Email">
+      </div>
+      <br>
+      <div>
+        <input type="reset" value="Reset"> <!-- Changed to use value attribute for buttons -->
+        <input type="submit" value="Submit"> <!-- Changed to use value attribute for buttons -->
+      </div>
+    </form>
+  </div> <!-- End of container div -->
+</body>
+</html>
